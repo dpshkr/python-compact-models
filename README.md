@@ -32,3 +32,7 @@ Id = m.apply_bias(VG, VD)
 
 Here `VG` and `VD` are gate and drain bias respectively (in Volts).
 `Id` is the drain current in amperes per meter.
+
+## Brews' charge sheet model
+
+
