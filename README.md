@@ -33,6 +33,14 @@ Id = m.apply_bias(VG, VD)
 Here `VG` and `VD` are gate and drain bias respectively (in Volts).
 `Id` is the drain current in amperes per meter.
 
-## Brews' charge sheet model
+## Double-gate MOSFET with undoped body
+
+This class `DGFET` implements the model of an undoped double gate MOSFET as described in [1].
+
+## References
+
+1. Taur, Yuan, et al. "A continuous, analytic drain-current model for DG MOSFETs." *IEEE Electron Device Letters* 25.2 (2004): 107-109.
+
+
 
 
