@@ -35,7 +35,21 @@ Here `VG` and `VD` are gate and drain bias respectively (in Volts).
 
 ## Double-gate MOSFET with undoped body
 
-This class `DGFET` implements the model of an undoped double gate MOSFET as described in [1].
+This class `DGFET` implements the model of an undoped double gate MOSFET as described in Ref. 1. 
+Parameters for this model are - 
+
+| Parameter | Units           | Default             | Description                              |
+|-----------|-----------------|---------------------|------------------------------------------|
+| `T`       | K               | 295                 | Temperature                              |
+| `kins`    | -               | 4.0                 | Relative permittivity of insulator       |
+| `ksc`     | -               | 11.0                | Relative permittivity of semiconductor   |
+| `tins`    | nm              | 10                  | Insulator thickness                      |
+| `tsc`     | nm              | 10                  | Semiconductor thickness                  |
+| `L`       | $\mu$ m         | 1                   | Channel length                           |
+| `ni`      | $cm^{-3}$       | $1.5\times 10^{10}$ | Intrinsic concentration of semiconductor |
+| `Vfb`     | V               | 0                   | Flat-band voltage                        |
+| `mu`      | $cm^2/V\cdot s$ | 100                 | Electron mobilty                         |
+
 
 ## References
 
