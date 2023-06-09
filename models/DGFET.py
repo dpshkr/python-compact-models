@@ -48,7 +48,7 @@ class DGFET:
         return (lhs - rhs)
     
     def solve_poisson(self, VG, V):
-        beta = brentq(self.setup_poisson, np.nextafter(0, 1),1.5, args=(VG, V))
+        beta = brentq(self.setup_poisson, np.nextafter(0, 1),np.pi/2, args=(VG, V))
         return beta
     
     def apply_bias(self, VG, VD):
