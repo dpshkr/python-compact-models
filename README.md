@@ -33,6 +33,13 @@ Id = m.apply_bias(VG, VD)
 Here `VG` and `VD` are gate and drain bias respectively (in Volts).
 `Id` is the drain current in amperes per meter.
 
+### A note on convergence
+
+Since all the models require solving highly non-linear equations, convergence of the solution is not guaranteed.
+However initial guesses and/or bracketing parameters are selected to obtain correct solutions for reasonable inputs.
+Extreme inputs may not give prroper solutions.
+Please see any caveats regarding convergence in the documentation of the particular models.
+
 ## Double-gate MOSFET with undoped body
 
 This class `DGFET` implements the model of an undoped double gate MOSFET as described in Ref. 1. 
